@@ -1,0 +1,42 @@
+[
+  {
+    "t1_id": 1,
+    "name": "test1 One",
+    "assoc_t3_id": 2,
+    "tags": [
+      "Tag1",
+      "Tag2",
+      "Tag3"
+    ],
+    "check": true,
+    "misc": "t1 misc 1"
+  },
+  {
+    "t1_id": 2,
+    "name": "test1 Two",
+    "assoc_t3_id": 1,
+    "tags": [
+      "Tag2"
+    ],
+    "check": false,
+    "misc": "t1 misc 2"
+  },
+  {
+    "t1_id": 3,
+    "name": "test1 Three",
+    "assoc_t3_id": 2,
+    "tags": [
+      "Tag1",
+      "Tag3"
+    ],
+    "check": false
+  },
+  {
+    "t1_id": 4,
+    "name": "test1 Four",
+    "assoc_t3_id": 2,
+    "tags": [],
+    "check": false,
+    "misc": "t1 misc 2"
+  }
+]
