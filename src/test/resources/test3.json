@@ -1,0 +1,12 @@
+[
+  {
+    "t3_id": 1,
+    "name": "test3 One",
+    "misc": "t3 misc 1"
+  },
+  {
+    "t3_id": 2,
+    "name": "test3 Two",
+    "misc": "t3 misc 2"
+  }
+]

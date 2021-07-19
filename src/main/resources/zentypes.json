@@ -1,0 +1,56 @@
+[
+  {
+    "type_name": "user",
+    "file_name": "users.json",
+    "cross_links": [
+      {
+        "type_name": "organization",
+        "ref_field": "organization_id",
+        "display_name": "organization_name",
+        "linked_field": "_id",
+        "display_from_linked": ["name"],
+        "display_in_linked": ["_id", "name"],
+        "back_link_display_name": "users",
+        "back_link_display": ["_id", "name", "alias"]
+      }
+    ]
+  },
+  {
+    "type_name": "ticket",
+    "file_name": "tickets.json",
+    "cross_links": [
+      {
+        "type_name": "user",
+        "ref_field": "submitter_id",
+        "display_name": "submitter_name",
+        "linked_field": "_id",
+        "display_from_linked": ["name"],
+        "back_link_display_name": "submitted tickets",
+        "back_link_display": ["_id", "subject"]
+      },
+      {
+        "type_name": "user",
+        "ref_field": "assignee_id",
+        "display_name": "assignee_name",
+        "linked_field": "_id",
+        "display_from_linked": ["name"],
+        "back_link_display_name": "assigned tickets",
+        "back_link_display": ["_id", "subject"]
+      },
+      {
+        "type_name": "organization",
+        "ref_field": "organization_id",
+        "display_name": "organization_name",
+        "linked_field": "_id",
+        "display_from_linked": ["name"],
+        "back_link_display_name": "tickets",
+        "back_link_display": ["_id", "subject"]
+      }
+    ]
+  },
+  {
+    "type_name": "organization",
+    "file_name": "organizations.json",
+    "cross_links": []
+  }
+]

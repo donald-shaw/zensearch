@@ -1,0 +1,38 @@
+[
+  {
+    "type_name": "user",
+    "file_name": "users.json",
+    "cross_links": [
+      {
+        "type_name": "organization",
+        "ref_field": "organization_id",
+        "display_name": "organization",
+        "linked_field": "_id",
+        "display_from_linked": ["name"],
+        "display_in_linked": ["_id", "name"],
+        "back_link_display_name": "users",
+        "back_link_display": ["_id", "name"]
+      }
+    ]
+  },
+  {
+    "type_name": "ticket",
+    "file_name": "tickets.json",
+    "cross_links": [
+      {
+        "type_name": "user",
+        "ref_field": "submitter_id",
+        "display_name": "submitter",
+        "linked_field": "_id",
+        "display_from_linked": ["_id", "name"],
+        "back_link_display_name": "tickets",
+        "back_link_display": ["subject"]
+      }
+    ]
+  },
+  {
+    "type_name": "organization",
+    "file_name": "organizations.json",
+    "cross_links": []
+  }
+]

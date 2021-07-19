@@ -1,0 +1,37 @@
+[
+  {
+    "type_name": "us",
+    "file_name": "test1.json",
+    "cross_links": [
+      {
+        "type_name": "tic",
+        "ref_field": "assoc_t3_id",
+        "display_name": "assoc_t3",
+        "linked_field": "t3_id",
+        "display_from_linked": ["t3_id", "name"],
+        "back_link_display_name": "test1s",
+        "back_link_display": ["t1_id", "name"]
+      }
+    ]
+  },
+  {
+    "type_name": "org",
+    "file_name": "test2.json",
+    "cross_links": [
+      {
+        "type_name": "us",
+        "ref_field": "link_id",
+        "display_name": "test1",
+        "linked_field": "t1_id",
+        "display_from_linked": ["t1_id", "name"],
+        "back_link_display_name": "test2s",
+        "back_link_display": ["misc"]
+      }
+    ]
+  },
+  {
+    "type_name": "tic",
+    "file_name": "test3.json",
+    "cross_links": []
+  }
+]
